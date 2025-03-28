@@ -69,17 +69,42 @@ const ServicesSection = () => {
               className="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full"
             >
               <div className="relative h-48 overflow-hidden">
-                {/* Ici nous utilisons une div avec une couleur de fond en attendant les vraies images */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-600">
-                  {/* Remplacer cette div par une vraie image quand disponible */}
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60" />
+                {/* Image d'arrière-plan */}
+                {service.id === 1 && (
+                  <img 
+                    src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                    alt="Fiat 500 rouge" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+                {service.id === 2 && (
+                  <img 
+                    src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                    alt="Permis accéléré" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+                {service.id === 3 && (
+                  <img 
+                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                    alt="Code de la route" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+                {service.id === 4 && (
+                  <img 
+                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                    alt="Conduite accompagnée" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <div className="flex items-center">
-                    <div className="bg-[#FF4242] p-2 rounded-lg mr-3">
+                    <div className="bg-[#FF4242] p-2 rounded-lg mr-3 shadow-md">
                       {service.icon}
                     </div>
-                    <h3 className="text-xl font-bold">
+                    <h3 className="text-xl font-bold drop-shadow-md">
                       {service.title}
                     </h3>
                   </div>

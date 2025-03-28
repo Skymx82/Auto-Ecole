@@ -4,28 +4,28 @@ import { motion } from 'framer-motion';
 
 const MoniteursHero = () => {
   return (
-    <section className="relative py-20 bg-gray-50">
-      {/* Fond avec motif subtil */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-50 to-gray-50 opacity-80" />
+    <section className="relative py-20 bg-[#F5F5F5]">
+      {/* Fond avec dégradé subtil */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-[#F5F5F5] opacity-80" />
       
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Notre Équipe de Moniteurs
+          <h1 className="text-4xl md:text-5xl font-bold text-[#212121] mb-4">
+            Nos Moniteurs
           </h1>
-          <p className="text-xl text-gray-700 mb-8">
-            Des professionnels passionnés et diplômés d'État qui vous accompagnent vers la réussite de votre permis.
+          <p className="text-xl text-[#212121] mb-8">
+            Passionnés, certifiés et expérimentés pour vous accompagner sur votre Fiat 500.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#team" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+            <a href="#team" className="bg-[#FF4242] hover:bg-[#E03232] text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-md">
               Découvrir l'équipe
             </a>
-            <a href="/contact" className="bg-white border-2 border-red-600 text-red-600 hover:bg-red-50 font-semibold py-3 px-6 rounded-full transition duration-300">
+            <a href="/contact" className="bg-white border border-[#212121] text-[#212121] hover:bg-gray-50 font-medium py-3 px-6 rounded-lg transition duration-300 shadow-sm">
               Prendre rendez-vous
             </a>
           </div>
