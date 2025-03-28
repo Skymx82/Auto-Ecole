@@ -146,7 +146,7 @@ const FormationDetail: React.FC<FormationDetailProps> = ({ formationId }) => {
           />
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 text-black">
           <div className="max-w-4xl mx-auto">
             <Link href="/formations" className="inline-flex items-center text-gray-600 hover:text-[#FF4242] mb-6 transition-colors duration-200">
               <FaArrowLeft className="mr-2" />
@@ -175,7 +175,7 @@ const FormationDetail: React.FC<FormationDetailProps> = ({ formationId }) => {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="flex items-center">
+                <div className="flex items-center text-black">
                   <FaCalendarAlt className="text-[#FF4242] mr-3" />
                   <div>
                     <div className="text-sm text-gray-500">Durée</div>
@@ -183,7 +183,7 @@ const FormationDetail: React.FC<FormationDetailProps> = ({ formationId }) => {
                   </div>
                 </div>
                 
-                <div className="flex items-center">
+                <div className="flex items-center text-black">
                   <FaClock className="text-[#FF4242] mr-3" />
                   <div>
                     <div className="text-sm text-gray-500">Nombre d'heures</div>
@@ -191,7 +191,7 @@ const FormationDetail: React.FC<FormationDetailProps> = ({ formationId }) => {
                   </div>
                 </div>
                 
-                <div className="flex items-center">
+                <div className="flex items-center text-black">
                   <FaMoneyBillWave className="text-[#FF4242] mr-3" />
                   <div>
                     <div className="text-sm text-gray-500">Tarif</div>
@@ -220,7 +220,7 @@ const FormationDetail: React.FC<FormationDetailProps> = ({ formationId }) => {
       </section>
       
       {/* Content Section */}
-      <section className="py-16 bg-[#F5F5F5]">
+      <section className="py-16 bg-[#F5F5F5] text-black" >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Sidebar */}
